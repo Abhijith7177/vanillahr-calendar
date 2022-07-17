@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Vanilla HR Calendar</title>
+  </head>
+
+  <body>
+    <section class="container">
+      <header>
+          <div class="top">
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polygon points="72 40 184 40 240 104 128 224 16 104 72 40" fill="none" stroke="#9d00dbb4" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polygon><polygon points="177.1 104 128 224 78.9 104 128 40 177.1 104" fill="none" stroke="#9d00dbb4" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polygon><line x1="16" y1="104" x2="240" y2="104" fill="none" stroke="#9d00dbb4" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+                    <h1>VanillaHR</h1>
+          </div>
+        <input type="text" placeholder="Search" class="search"/>
+       
+        <ul class="one">
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="side--icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+</svg>Dashboard</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="side--icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+</svg>Jobs</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="side--icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+</svg>Candidates</li>
+          <li class="highlight"><svg xmlns="http://www.w3.org/2000/svg" class="side--icon active" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+</svg>Calendar</li>
+        </ul>
+
+        <ul class="two">
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="side--icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>Account</li>
+          <li> <svg xmlns="http://www.w3.org/2000/svg" class="side--icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+</svg>Billing</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="side--icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+</svg>Settings</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="side--icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+</svg>Support</li>
+        </ul>
+
+        <ul class="three">
+          <li> <svg xmlns="http://www.w3.org/2000/svg" class="side--icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+</svg>Admin</li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" class="side--icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+</svg>Logout</li>
+        </ul>
+      </header>
+      <!-- <nav> -->
+        <!-- <div class="nav--top"> -->
+          <h3>Calendar</h3>
+          <select name="" id="">
+            <option value="">All Meeting</option>
+          </select>
+        <!-- </div> -->
+        <button class="btn">Create Meeting</button>
+      <!-- </nav> -->
+       <!-- <div class="dates">   -->
+        <button class="wrap wrap--left"> 
+        <svg xmlns="http://www.w3.org/2000/svg" class="chevron chevron--left" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+</svg></button>
+        <div class="date date--1">
+          <p class="word">Sep</p>
+          <p class="day">19</p>
+          <p class="word">MON</p>
+          </div>
+          <div class="date date--2">
+          <p class="word">Sep</p>
+          <p class="day">20</p>
+          <p class="word">TUE</p>
+          </div>
+          <div class="date date--3">
+          <p class="word">Sep</p>
+          <p class="day">21</p>
+          <p class="word">WED</p>
+          </div>
+          <div class="date date--4">
+          <p class="word">Sep</p>
+          <p class="day">22</p>
+          <p class="word">THU</p>
+          </div>
+          <div class="date date--5">
+          <p class="word">Sep</p>
+          <p class="day">23</p>
+          <p class="word">FRI</p>
+          </div>
+          <div class="date date--6">
+          <p class="word">Sep</p>
+          <p class="day">24</p>
+          <p class="word">SAT</p>
+          </div>
+          <div class="date date--7">
+          
+          <p class="word">Sep</p>
+          <p class="day">25</p>
+          <p class="word">SUN</p>
+        </div>
+        <button class="wrap wrap--right">
+        <svg xmlns="http://www.w3.org/2000/svg" class="chevron chevron--right" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+</svg></button>
+        <!-- </div>   -->
+      <div class="times">
+        <p class="time">7 AM</p>
+        <p class="time">8 AM</p>
+        <p class="time">9 AM</p>
+        <p class="time">10 AM</p>
+        <p class="time">11 AM</p>
+        <p class="time">12 PM</p>
+        <p class="time">1 PM</p>
+        <p class="time">2 PM</p>
+        <p class="time">3 PM</p>
+        <p class="time">4 PM</p>
+      </div>
+
+      <div class="card">
+          <div class="card--1">
+            <div class="card--inner">
+              <div class="card--top">
+                <img src="/pexels-grisha-chernigowsky-3981337.jpg" alt="" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="card--tick" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <p class="time">7:30 AM</p>
+              <p class="event">Meeting <br>with  Sam </p>
+            </div>
+          </div>
+</div>
+<div class="card">
+          <div class="card--2">
+            <div class="card--inner">
+            <div class="card--top">
+            <img src="/pexels-grisha-chernigowsky-3981337.jpg" alt="" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="card--tick" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+</svg></div>
+            <p class="time">8:40 AM</p>
+            <p class="event">Meeting <br> with Sam</p>
+            </div>
+          </div>
+</div>
+          <div class="card--3">
+            <div class="card--inner">
+            <div class="card--top">
+            <img src="/pexels-grisha-chernigowsky-3981337.jpg" alt="" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="card--dot" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" /></svg></div>
+            <p class="time">6:30 AM</p>
+            <p class="event">Meeting <br>with Sam</p>
+            </div>
+
+          </div>
+          <div class="card--4">
+            <div class="card--inner">
+            <div class="card--top"><img src="/pexels-grisha-chernigowsky-3981337.jpg" alt="" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="card--dot" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" /></svg></div>
+            <p class="time">6:30 AM</p>
+            <p class="event">Meeting <br>with Sam</p>
+            </div>
+          </div>
+
+          <div class="card--5">
+            <div class="card--inner">
+            <div class="card--top"><img src="/pexels-grisha-chernigowsky-3981337.jpg" alt="" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="card--dot" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" /></svg></div>
+            <p class="time">7:30 AM</p>
+            <p class="event">Meeting <br>with Sam</p>
+            </div>
+          </div>
+          <div class="card--5a">+</div>
+          <div class="card--6">
+            <div class="card--inner">
+            <div class="card--top"><img src="/pexels-grisha-chernigowsky-3981337.jpg" alt="" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="card--dot" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" /></svg></div>
+            <p class="time">6:30 AM</p>
+            <p class="event">Launch <br>with Carla</p>
+            </div>
+          </div>
+
+          <div class="dotted">
+          <div class="card--7">
+            <div class="card--inner">
+            <div class="card--top"><img src="/pexels-grisha-chernigowsky-3981337.jpg" alt="" /></div>
+            <p class="time">6:30 AM</p>
+            <p class="event">Meeting <br>with Sam</p>
+            </div>
+          </div>
+          </div>
+          <div class="card--8">
+            <div class="card--inner">
+            <div class="card--top"><img src="/pexels-grisha-chernigowsky-3981337.jpg" alt="" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="card--dot" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" /></svg></div>
+            <p class="time">6:30 AM</p>
+            <p class="event">Meeting <br>with Sam</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
